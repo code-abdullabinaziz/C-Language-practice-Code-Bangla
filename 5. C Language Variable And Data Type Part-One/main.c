@@ -362,3 +362,69 @@ int main() {
 }
 
 
+
+
+#include <stdio.h>
+#include <stdbool.h> // বুলিয়ান (true/false) ব্যবহারের জন্য
+
+int main() {
+    // কনস্ট্যান্ট ও ভেরিয়েবল ডিফাইন করা
+    char name[] = "Mohammad Abdullah";
+    char dob[] = "15-06-1997";
+    char bloodGroup[] = "B+";
+    char religion[] = "Islam";
+    char country[] = "Bangladesh";
+    char nidNumber[] = "1997541258745";
+    char birthPlace[] = "Rangpur";
+
+    int age = 30;
+    float cgpa = 3.50;
+    char address[] = "Gongachora, Rangpur";
+    char subject[] = "Backend Engineering";
+    bool married = false; // C ল্যাঙ্গুয়েজে false মানে 0
+    double accountBalance = 89.5982145897;
+    char gmail[] = "programmeraziz216@gmail.com";
+    char phone[] = "01568451112";
+    char skills[] = "C, JavaScript, C++, Python";
+    char hobbies[] = "Coding, Reading, Traveling";
+    char session[] = "2025-26";
+    char currentStatus[] = "Student & Programmer";
+    char language[] = "Bengali, English";
+
+    // হেডার প্রিন্ট
+    printf("-------------------------------------------------------\n");
+    printf("------------ STUDENT INFORMATION CARD -----------------\n");
+    printf("-------------------------------------------------------\n");
+
+    // %-16s মানে লেফট অ্যালাইন (padEnd এর মতো) এবং %35s মানে রাইট অ্যালাইন (padStart এর মতো)
+    printf("%-16s | %35s\n", "Name:", name);
+    printf("%-16s | %35s\n", "DOB:", dob);
+    printf("%-16s | %35s\n", "Blood Group:", bloodGroup);
+    printf("%-16s | %35s\n", "Religion:", religion);
+    printf("%-16s | %35s\n", "Country:", country);
+    printf("%-16s | %35s\n", "NID Number:", nidNumber);
+    printf("%-16s | %35s\n", "Birth Place:", birthPlace);
+    
+    // নাম্বারগুলোর জন্য %35d বা %.2f ব্যবহার করা হয়েছে
+    printf("%-16s | %35d\n", "Age:", age);
+    printf("%-16s | %35.2f\n", "CGPA:", cgpa);
+    
+    printf("%-16s | %35s\n", "Address:", address);
+    printf("%-16s | %35s\n", "Subject:", subject);
+    
+    // বুলিয়ানের জন্য (false হলে 0 দেখাবে)
+    printf("%-16s | %35d\n", "Married:", married);
+    
+    printf("%-16s | %35.2f\n", "Account Bal:", accountBalance);
+    printf("%-16s | %35s\n", "Gmail:", gmail);
+    printf("%-16s | %35s\n", "Phone:", phone);
+    printf("%-16s | %35s\n", "Skills:", skills);
+    printf("%-16s | %35s\n", "Hobbies:", hobbies);
+    printf("%-16s | %35s\n", "Session:", session);
+    printf("%-16s | %35s\n", "Status:", currentStatus);
+    printf("%-16s | %35s\n", "Languages:", language);
+
+    printf("-------------------------------------------------------\n");
+
+    return 0;
+}
