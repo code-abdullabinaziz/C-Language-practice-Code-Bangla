@@ -428,3 +428,45 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
+
+
+
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+
+int main(){
+  char name[] = "Abdullah";
+  char address[] = "Gongachora, Rangpur";
+  char subject[] = "Programming";
+  char grade = 'A';
+  char bloodGroup[] = "B+";
+  int age = 30;
+  bool married = false;
+  float height = 5.211f;
+  char language[] = "Bengali, English";
+  double account_balance = 12.1234123;
+    
+  printf("--------Student Information--------\n");
+  printf("%-12s | %10s\n", "Name:", name);
+  printf("%-12s | %10d\n", "Age:", age);
+  printf("%-12s | %10.1f\n", "Height:", height);
+  printf("%-12s | %10s\n", "Blood Group:", bloodGroup); 
+  printf("%-12s | %10s\n", "Address:", address);
+  printf("%-12s | %10c\n", "Grade:", grade);
+  printf("%-12s | %10s\n", "Subject:", subject);
+  printf("%-12s | %10s\n", "Language:", language);
+  printf("%-12s | %10.2lf\n", "Account:", account_balance);
+  printf("%-12s | %10s\n", "Married:", (married ? "Yes" : "False"));
+    
+  return 0;
+}
+
+
+
+
